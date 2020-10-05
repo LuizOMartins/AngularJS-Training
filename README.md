@@ -37,7 +37,7 @@
 - [ ] Debugar  aplicação com Chrome.
 - [ ] Delete.
 - [ ] Update
--- [ ] Toast.
+
 
 ### Conteúdos:
 

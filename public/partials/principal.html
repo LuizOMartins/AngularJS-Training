@@ -1,1 +1,14 @@
 <h1>HOME</h1>
+
+
+<hr>
+
+
+<div class="row">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 thumbnail"  ng-controller="HomeController" ng-repeat="item in itens">
+                <p>Nome: {{item.name}}</p>
+                <p>Data Nascimento: {{item.age}}</p>    
+            </div>
+        </div>
+</div>

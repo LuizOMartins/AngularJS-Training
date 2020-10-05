@@ -20,7 +20,7 @@ module.exports = function(app) {
 	api.lista = function(req, res) {
 		modelUser.find()
 		.then(function(response) {
-            console.log('BUSCANDO...');
+			// console.log(response);
 			res.json(response);
 		}, function(error) {
 			console.log(error);
@@ -30,7 +30,6 @@ module.exports = function(app) {
     };
 
     api.buscaPorId = function(req, res) {
-
 		modelUser.findById(req.params.id)
 		.then(function(user) {
 			if (!user) throw new Error('Usuário não encontrada');
