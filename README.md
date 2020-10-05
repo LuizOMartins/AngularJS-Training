@@ -30,12 +30,12 @@
     *  [ ] Validação do Form Usando AngularJS.
     *  [ ] Salvando Cadastro no Banco com POST.
         *    Simular Two-way x Data binding, no POST.
-*  [ ] Lista Itens na Home (GET). **
+*  [ ] Lista Itens na Home (GET). 
 
 - **Se der tempo**
 - [ ] **Localizar Itens**
 - [ ] Debugar  aplicação com Chrome.
-- [ ] Delete.
+- [ ] Delete. **
 - [ ] Update
 
 
@@ -97,8 +97,6 @@ ______________________________________________________________
 ___________________________________________________________________________
 
 
+*Debugar  aplicação com Chrome.*
 
-
-**erro:**
-
-- Error: user validation failed: office: Cast to Number failed for value "5f7a33d1a0bbb78324916e12" at path "office"
+-

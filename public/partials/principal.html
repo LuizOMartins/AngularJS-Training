@@ -1,14 +1,11 @@
 <h1>HOME</h1>
-
-
 <hr>
-
-
 <div class="row">
         <div class="row">
-            <div class="col-xs-6 col-md-3 thumbnail"  ng-controller="HomeController" ng-repeat="item in itens">
+            <div ng-model="itens" class="col-xs-6 col-md-3 thumbnail" ng-repeat="item in itens">
                 <p>Nome: {{item.name}}</p>
-                <p>Data Nascimento: {{item.age}}</p>    
+                <p>Data Nascimento: {{item.age}}</p>  
+                <button  class="btn btn-danger btn-block" ng-click="remover(item)">Remover</button>'  
             </div>
         </div>
 </div>
