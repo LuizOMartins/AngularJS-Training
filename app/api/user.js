@@ -6,10 +6,10 @@ module.exports = function(app) {
     var modelUser = mongoose.model('user');
 
     api.adiciona = function(req, res) {
-
+		console.log('POST');
 		modelUser.create(req.body)
-		.then(function(foto) {
-			res.json(foto);
+		.then(function(user) {
+			res.json(user);
 		}, function(error) {
 			console.log('Erro:', error);
 			res.sendStatus(500);

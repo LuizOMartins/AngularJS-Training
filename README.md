@@ -29,6 +29,7 @@
 *  [x] Criar Home Page e Pagina de Cadastro.
     *  [ ] Validação do Form Usando AngularJS.
     *  [ ] Salvando Cadastro no Banco com POST.
+        *    Simular Two-way x Data binding, no POST.
 *  [ ] Lista Itens na Home (GET).
 
 - **Se der tempo**
@@ -55,7 +56,7 @@
 
 - [ ] Requisições com $http e $Resource.
 - [ ] Filtro  usando Pipe |
-- [ ] Two-way Binding
+- [ ] **Two-way Binding**
      - A **ng-model** diretiva fornece uma ligação bidirecional entre o modelo e a visualização.
      -  Quando os dados no modelo mudam, a visualização reflete a mudança e quando os dados na visualização mudam, o modelo também é atualizado. 
 
@@ -76,8 +77,28 @@
 
 4) É possível combinar a diretiva ng-disabled com o status de válido ou inválido do formulário, para desabilitar um botão caso o formulário esteja inválido.
 
+______________________________________________________________
+
+**Mongo CMD:**
+
+* mongo
+* show dbs
+* create: use user
+* db.cargos.insert({descricao:"Dev"});
+
 - Referências:
 
 - https://www.w3schools.com/angular/angular_databinding.asp
 - https://medium.com/criciumadev/two-way-data-binding-fd5d71712d28
 - https://getbootstrap.com/docs/3.3/components/
+
+
+
+___________________________________________________________________________
+
+
+
+
+**erro:**
+
+- Error: user validation failed: office: Cast to Number failed for value "5f7a33d1a0bbb78324916e12" at path "office"

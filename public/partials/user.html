@@ -6,10 +6,66 @@
     <div class="row">
         <div class="col-lg-6 col-md-6">
             <h1>CADASTRO</h1>
-        </div>
-        <div class="col-lg-6 col-md-6">
+         
+            <form novalidate name="formulario" class="row" ng-submit="submeter()">
+                <div class="col-md-6">
 
+                    <!-- NOME -->
+                    <div class="form-group">
+                        <label>Nome*</label>
+                        <input name="name" class="form-control" ng-model="user.name"  ng-maxlength="20"  ng-minlength="2" required>  
+                        <span ng-show = "formulario.$submitted && formulario.name.$error.required"
+                            class="form-control alert-danger">
+                            Nome obrigatório
+                        </span>
+                        <span ng-show="formulario.name.$error.maxlength" 
+                            class="form-control alert-danger">
+                            No máximo 20 caracteres!
+                        </span>
+                        <span ng-show="formulario.name.$error.minlength" 
+                        class="form-control alert-danger">
+                        No minimo 2 caracteres!
+                    </span>
+                    </div>
+                    <!-- END NOME -->
+
+                    <!-- CARGO -->
+                    <div class="form-group">
+                        <label>Cargo*</label>
+                        <select name="office" ng-model="user.office" class="form-control" 
+                                required ng-controller="CargoController" 
+                                ng-options="office._id as (office.descricao | uppercase) for office in offices">
+                            <option value="">Escolha um cargo</option>
+                        </select>
+                        <span ng-show="formulario.$submitted && formulario.office.$error.required" 
+                            class="form-control alert-danger"> 
+                            Cargo obrigatório
+                        </span>
+                    </div>
+                    <!-- END CARGO -->
+
+
+                    <!-- DATA -->
+                    <div class="form-group">
+                        <label>Data Nascimento *</label>
+                        <input type="date" ng-model="dateString" name="date" required/>
+                    </div>
+                    <!-- END DATA -->
+                    <button type="submit" class="btn btn-primary" ng-disabled="formulario.$invalid">
+                        Salvar
+                    </button>
+                    <a href="/#/home" class="btn btn-primary">Voltar</a>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p>Two-way Binding</p>
+                    <p>{{user.name}}</p>
+                    <p id="office">{{user.office}}</p>
+                    <p>{{dateString}}</p>
+                </div>
+            </form>
         </div>
+   
     
     </div>
 
