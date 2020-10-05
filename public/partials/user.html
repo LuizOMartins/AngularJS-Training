@@ -14,6 +14,7 @@
                     <div class="form-group">
                         <label>Nome*</label>
                         <input name="name" class="form-control" ng-model="user.name"  ng-maxlength="20"  ng-minlength="2" required>  
+                        <!-- <input name="name" class="form-control" ng-bind="user.name"  ng-maxlength="20"  ng-minlength="2" required>   -->
                         <span ng-show = "formulario.$submitted && formulario.name.$error.required"
                             class="form-control alert-danger">
                             Nome obrigatório
@@ -29,20 +30,18 @@
                     </div>
                     <!-- END NOME -->
 
-                    <!-- CARGO -->
                     <div class="form-group">
                         <label>Cargo*</label>
                         <select name="office" ng-model="user.office" class="form-control" 
                                 required ng-controller="CargoController" 
                                 ng-options="office._id as (office.descricao | uppercase) for office in offices">
-                            <option value="">Escolha um cargo</option>
+                            <option value="">Escolha um Cargo</option>
                         </select>
                         <span ng-show="formulario.$submitted && formulario.office.$error.required" 
-                            class="form-control alert-danger"> 
-                            Cargo obrigatório
+                            class="form-control alert-danger">
+                            Grupo obrigatório
                         </span>
                     </div>
-                    <!-- END CARGO -->
 
 
                     <!-- DATA -->

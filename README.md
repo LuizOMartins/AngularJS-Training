@@ -30,7 +30,7 @@
     *  [ ] Validação do Form Usando AngularJS.
     *  [ ] Salvando Cadastro no Banco com POST.
         *    Simular Two-way x Data binding, no POST.
-*  [ ] Lista Itens na Home (GET).
+*  [ ] Lista Itens na Home (GET). **
 
 - **Se der tempo**
 - [ ] **Localizar Itens**
